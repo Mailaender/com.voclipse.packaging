@@ -46,11 +46,13 @@ developer documentation.
 %install
 rm -rf %{buildroot}
 
-mkdir -p %{buildroot}opt
-cp -a -t %{buildroot}opt %{_builddir}/voclipse
+mkdir -p %{buildroot}/opt
+cp -a -t %{buildroot}/opt %{_builddir}/voclipse
 
 mkdir -p %{buildroot}%{_bindir}
 ln -s opt/%{name}/voclipse %{buildroot}%{_bindir}/voclipse
+
+chmod +x %{buildroot}%{_bindir}/voclipse
 
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/
 cp %{S:2} %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/
@@ -69,6 +71,7 @@ mv -t %{buildroot}%{_defaultdocdir}/voclipse %{buildroot}opt/voclipse/about.html
 rm -rf %{buildroot}
 
 %files
+%defattr(-,root,root)
 /usr/bin/voclipse
 /opt/voclipse
 /usr/share/applications/voclipse.desktop
