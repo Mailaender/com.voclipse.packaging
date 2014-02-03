@@ -23,8 +23,8 @@ Requires: java
 Prefix: /usr
 Source0: com.vogella.vde.product-linux.gtk.x86.zip
 Source1: com.vogella.vde.product-linux.gtk.x86_64.zip
-Source2: eclipse.png
-Source3: eclipse.desktop
+Source2: voclipse.png
+Source3: voclipse.desktop
 BuildRoot: /tmp/voclipse
 
 %description
