@@ -58,6 +58,12 @@ cp %{S:2} %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/
 mkdir -p %{buildroot}%{_datadir}/applications/
 cp %{S:3} %{buildroot}%{_datadir}/applications/
 
+%post
+update-desktop-database
+
+%postun
+update-desktop-database
+
 %clean
 rm -rf %{buildroot}
 
