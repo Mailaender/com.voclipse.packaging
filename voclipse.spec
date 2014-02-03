@@ -59,11 +59,11 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 cp %{S:3} %{buildroot}%{_datadir}/applications/
 
 mkdir -p %{buildroot}%{_defaultdocdir}/voclipse
-mv -t %{buildroot}%{_defaultdocdir}/voclipse %{buildroot}opt/voclipse/about.html \
-                                                 %{buildroot}opt/voclipse/about_files \
-                                                 %{buildroot}opt/voclipse/epl-v10.html \
-                                                 %{buildroot}opt/voclipse/notice.html \
-                                                 %{buildroot}opt/voclipse/readme
+mv -t %{buildroot}%{_defaultdocdir}/voclipse %{buildroot}/opt/voclipse/about.html \
+                                                 %{buildroot}/opt/voclipse/about_files \
+                                                 %{buildroot}/opt/voclipse/epl-v10.html \
+                                                 %{buildroot}/opt/voclipse/notice.html \
+                                                 %{buildroot}/opt/voclipse/readme
 
 %clean
 rm -rf %{buildroot}
