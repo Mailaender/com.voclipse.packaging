@@ -46,8 +46,8 @@ developer documentation.
 %install
 rm -rf %{buildroot}
 
-mkdir -p %{buildroot}/opt
-cp -a -t %{buildroot}/opt %{_builddir}/voclipse
+mkdir -p %{buildroot}/opt/voclipse
+cp * %{buildroot}/opt/voclipse
 
 mkdir -p %{buildroot}%{_bindir}
 ln -s /opt/%{name}/voclipse %{buildroot}%{_bindir}/voclipse
