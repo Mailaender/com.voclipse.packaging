@@ -19,7 +19,6 @@ License: EPL-1.0
 URL: http://voclipse.com
 Group: Development/Tools/IDE
 Packager: Matthias Mailänder <matthias.mailaender@vogella.com>
-BuildRequires: unzip
 Requires: java
 Prefix: /usr
 Source0: com.vogella.vde.product-linux.gtk.x86.zip
