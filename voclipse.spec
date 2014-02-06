@@ -21,8 +21,8 @@ Group: Development/Tools/IDE
 Packager: Matthias Mailänder <matthias.mailaender@vogella.com>
 Requires: java
 Prefix: /usr
-Source0: com.vogella.vde.luna.product-linux.gtk.x86_64.zip
-Source1: com.vogella.vde.luna.product-linux.gtk.x86.zip
+Source0: com.vogella.vde.luna.product-linux.gtk.x86.zip
+Source1: com.vogella.vde.luna.product-linux.gtk.x86_64.zip
 Source2: voclipse.png
 Source3: voclipse.desktop
 BuildRoot: /tmp/voclipse
