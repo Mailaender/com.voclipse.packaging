@@ -35,10 +35,10 @@ developer documentation.
 
 %prep
 %ifarch i586
-%setup -q -c %{name}
+%setup -q -c %{name}-32bit
 %endif
 %ifarch x86_64
-%setup -a 1 -q -c %{name}
+%setup -a 1 -q -c %{name}-64bit
 %endif
 
 %build
