@@ -12,17 +12,17 @@
 #
 
 Name: voclipse
-Version: 4.3.1
+Version: 4.4M5
 Release: 0
 Summary: Vogella Development Environment a.k.a. Voclipse
 License: EPL-1.0
-URL: http://voclipse.com
+Url: http://voclipse.com
 Group: Development/Tools/IDE
 Packager: Matthias Mailänder <matthias.mailaender@vogella.com>
 Requires: java
 Prefix: /usr
-Source0: com.vogella.vde.product-linux.gtk.x86.zip
-Source1: com.vogella.vde.product-linux.gtk.x86_64.zip
+Source1: com.vogella.vde.luna.product-linux.gtk.x86_64.zip
+Source2: com.vogella.vde.luna.product-linux.gtk.x86.zip
 Source2: voclipse.png
 Source3: voclipse.desktop
 BuildRoot: /tmp/voclipse
