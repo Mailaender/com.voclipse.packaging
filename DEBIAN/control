@@ -4,6 +4,7 @@ Priority: extra
 Architecture: i386
 Source: voclipse
 Depends: openjdk-7-jre
+Installed-Size: {SIZE}
 Maintainer: Matthias Mailänder <matthias.mailaender@vogella.com>
 Homepage: http://voclipse.com
 Description: voclipse IDE
