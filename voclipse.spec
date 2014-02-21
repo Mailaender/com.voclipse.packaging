@@ -21,11 +21,7 @@ Group: Development/Tools/IDE
 Packager: Matthias Mailänder <matthias.mailaender@vogella.com>
 Requires: java
 Prefix: /usr
-Source0: com.vogella.vde.luna.product-linux.gtk.x86.zip
-Source1: com.vogella.vde.luna.product-linux.gtk.x86_64.zip
-Source2: voclipse.png
-Source3: voclipse.desktop
-Source4: voclipse
+Source: com.vogella.vde.luna.product-linux.gtk.x86.zip
 BuildRoot: /tmp/voclipse
 
 %description
@@ -35,29 +31,13 @@ Development Tooling, Git and Maven support, including source and
 developer documentation.
 
 %prep
-%ifarch i586
-%setup -q -c %{name}-32bit
-%endif
-%ifarch x86_64
-%setup -a 1 -q -c %{name}-64bit
-%endif
 
 %build
 
 %install
 rm -rf %{buildroot}
+cp -r %{_sourcedir}/root %{buildroot}
 
-mkdir -p %{buildroot}/opt/voclipse
-cp -r * %{buildroot}/opt/voclipse
-
-mkdir -p %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/
-cp %{S:2} %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/
-
-mkdir -p %{buildroot}%{_datadir}/applications/
-cp %{S:3} %{buildroot}%{_datadir}/applications/
-
-mkdir -p %{buildroot}%{_bindir}
-cp %{S:4} %{buildroot}%{_bindir}/voclipse
 chmod +x %{buildroot}%{_bindir}/voclipse
 
 %post
