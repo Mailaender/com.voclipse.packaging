@@ -2,4 +2,4 @@
 cd /opt/voclipse/
 # https://bugs.eclipse.org/bugs/show_bug.cgi?id=421127
 export SWT_GTK3=0
-./voclipse -Declipse.consoleLog=true -debug
+./voclipse -Declipse.consoleLog=true -debug -showlocation
