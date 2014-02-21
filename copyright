@@ -1,2 +1,13 @@
-(c) Copyright Eclipse contributors and others 2000-2014.
-Licensed under http://eclipse.org/org/documents/epl-v10.php
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: voclipse
+Source: http://download.vogella.com/p2/C-MASTER-com.vogella.vde.luna/lastStable/archive/com.vogella.vde.luna.product/target/products/com.vogella.vde.luna.product-linux.gtk.x86.zip
+
+Files: *
+Copyright: 2000-2014 Eclipse contributors
+License: EPL-1.0
+
+Files: debian/*
+Copyright: 2014 vogella GmbH, Hamburg Germany.
+License: EPL-1.0
+
+License: EPL-1.0
