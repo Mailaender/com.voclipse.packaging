@@ -1,0 +1,13 @@
+Package: voclipse
+Version: 4.4M5
+Priority: extra
+Architecture: i386
+Source: voclipse
+Depends: openjdk-7-jre
+Maintainer: Matthias Mailänder <matthias.mailaender@vogella.com>
+Homepage: http://voclipse.com
+Vcs-Browser: https://github.com/Mailaender/com.voclipse.packaging
+Vcs-Git: https://github.com/Mailaender/com.voclipse.packaging.git
+Description: voclipse IDE
+ .
+ A pre-configured Java IDE based on the award winning Eclipse project. Includes all the tools needed to develop and debug: Java and Plug-in Development Tooling, Git and Maven support, including source and developer documentation.
