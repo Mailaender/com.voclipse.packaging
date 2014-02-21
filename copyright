@@ -6,7 +6,7 @@ Files: *
 Copyright: 2000-2014 Eclipse contributors
 License: EPL-1.0
 
-Files: debian/*
+Files: DEBIAN/*
 Copyright: 2014 vogella GmbH, Hamburg Germany.
 License: EPL-1.0
 
