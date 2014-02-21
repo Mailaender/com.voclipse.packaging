@@ -25,6 +25,7 @@ Source0: com.vogella.vde.luna.product-linux.gtk.x86.zip
 Source1: com.vogella.vde.luna.product-linux.gtk.x86_64.zip
 Source2: voclipse.png
 Source3: voclipse.desktop
+Source4: voclipse
 BuildRoot: /tmp/voclipse
 
 %description
@@ -49,14 +50,15 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/opt/voclipse
 cp -r * %{buildroot}/opt/voclipse
 
-mkdir -p %{buildroot}%{_bindir}
-ln -s /opt/%{name}/voclipse %{buildroot}%{_bindir}/voclipse
-
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/
 cp %{S:2} %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/
 
 mkdir -p %{buildroot}%{_datadir}/applications/
 cp %{S:3} %{buildroot}%{_datadir}/applications/
+
+mkdir -p %{buildroot}%{_bindir}
+cp %{S:4} %{buildroot}%{_bindir}/voclipse
+chmod +x %{buildroot}%{_bindir}/voclipse
 
 %post
 update-desktop-database
