@@ -1,7 +1,7 @@
 com.voclipse.packaging
 ======================
 
-Linux packaging for the [voclipse](http://voclipse.com) IDE. [![Build Status](https://build.vogella.com/ci/view/voclipse/job/C-MASTER-com.voclipse.packaging/badge/icon)](https://build.vogella.com/ci/view/voclipse/job/C-MASTER-com.voclipse.packaging/)
+Installer packaging for the [voclipse](http://voclipse.com) IDE. [![Build Status](https://build.vogella.com/ci/view/voclipse/job/C-MASTER-com.voclipse.packaging/badge/icon)](https://build.vogella.com/ci/view/voclipse/job/C-MASTER-com.voclipse.packaging/)
 
 RPM
 ---
@@ -18,3 +18,7 @@ sed -i "s/{SIZE}/$PACKAGE_SIZE/" DEBIAN/control
 ```
 
 Copy the `DEBIAN` directory into `root` and run `fakeroot dpkg-deb -b .` from there.
+
+Setup.exe
+---------
+Unzip `com.vogella.vde.luna.product-win32.win32.x86.zip` into a directory of the same name. Afterwards run `makensis -DARCHITECTURE=x86 voclipse-setup.nsi` for a 32-bit installer. Use the ZIP file with the suffix `x86_64` and switch the `DARCHITECTURE=x86_64` for the 64-bit version.
