@@ -115,7 +115,7 @@ ShowUninstDetails show
 #
 Section "-Java" JAVA
 	ClearErrors
-	ReadRegStr $0 HKLM "SOFTWARE\JavaSoft\Java Development Kit" "CurrentVersion"
+	ReadRegStr $0 HKLM "SOFTWARE\JavaSoft\Java Runtime Environment" "CurrentVersion"
 	IfErrors error 0
 	IntCmp $0 1 done error done
 	error:
