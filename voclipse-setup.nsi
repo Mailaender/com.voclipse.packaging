@@ -291,30 +291,6 @@ Section -un.post UNMETADATA
 SectionEnd
 
 #
-# DELETE USER SPECIFIC VOCLIPSE FILES
-#
-Function un.DeleteUserProfiles
-    # GET THE NEXT PROFILE PATH
-    Pop $0
- 
-    # REMOVE VOCLIPSE SPECIFIC FILES
-    RMDir /R /REBOOTOK "$0\.voclipse"
-    #
-    # DON'T REMOVE THE WORKSPACE DATA
-    #
-    #RMDir /R /REBOOTOK "$0\voclipse"
-
-    # CONTINUE
-    Push ""
-    Return
-
-    # STOP ENUMERATION
-    # ALL EXCEPT AN EMPTY STRING WILL ABORT THE ENUMERATION
-    #Stop:
-    #Push "~"
-FunctionEnd
-
-#
 # INSTALLER
 #
 Function .onInit
