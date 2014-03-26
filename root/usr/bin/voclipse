@@ -4,4 +4,4 @@ cd /opt/voclipse/
 export SWT_GTK3=0
 # https://bugs.eclipse.org/bugs/show_bug.cgi?id=420099
 export UBUNTU_MENUPROXY=0
-./voclipse -Declipse.consoleLog=true -debug -showlocation
+./voclipse
