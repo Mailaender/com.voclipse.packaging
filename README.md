@@ -6,14 +6,14 @@ Installer packaging for the [voclipse](http://voclipse.com) IDE. [![Build Status
 Creating an .rpm package
 ------------------------
 
-This creates an .rpm file which can be installed into rpm based Linux distributions, like openSUSE, Fedora, Redhat, etc. 
+This creates an .rpm file which can be installed into RPM based Linux distributions like openSUSE, Fedora/RedHat/CentOS, etc.
 
 Unzip the pre-built voclipse archives into `root/opt/voclipse`. Then run `rpmbuild voclipse.spec`
 
 Creating a .deb package
 -----------------------
 
-This creates an .deb file which can be installed into .deb based Linux distributions, like Debian and Ubuntu.
+This creates an .deb file which can be installed into DPKG based Linux distributions, like Debian and Ubuntu.
 
 Unzip the pre-built Eclipse archives into `root/opt/voclipse`. Also calculate the size of the installed package and update the dpkg control file
 
@@ -30,7 +30,7 @@ sed -i "s/{ARCH}/i386/" DEBIAN/control
 
 Copy the `DEBIAN` directory into `root` and run `fakeroot dpkg-deb -b .` from there.
 
-Creating a Setup.exe for MS Windows
+Creating a setup.exe for MS Windows
 -----------------------------------
 
 
