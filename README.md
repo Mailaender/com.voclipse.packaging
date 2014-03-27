@@ -15,11 +15,17 @@ Creating a .deb package
 
 This creates an .deb file which can be installed into .deb based Linux distributions, like Debian and Ubuntu.
 
-Unzip the pre-built Eclipse archives into `root/opt/voclipse`. Also calculate the size of the installed package and update the dpkg control file.
+Unzip the pre-built Eclipse archives into `root/opt/voclipse`. Also calculate the size of the installed package and update the dpkg control file
 
 ```bash
 PACKAGE_SIZE=`du --apparent-size -c "root/opt/voclipse" | grep "total" | awk '{print $1}'`
 sed -i "s/{SIZE}/$PACKAGE_SIZE/" DEBIAN/control
+```
+
+and set the architecture
+
+```bash
+sed -i "s/{ARCH}/i386/" DEBIAN/control
 ```
 
 Copy the `DEBIAN` directory into `root` and run `fakeroot dpkg-deb -b .` from there.

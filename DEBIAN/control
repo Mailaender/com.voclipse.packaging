@@ -1,7 +1,7 @@
 Package: voclipse
 Version: 4.4M6
 Priority: extra
-Architecture: i386
+Architecture: {ARCH}
 Source: voclipse
 Depends: openjdk-7-jre
 Installed-Size: {SIZE}
