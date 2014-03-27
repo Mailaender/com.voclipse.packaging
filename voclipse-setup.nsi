@@ -94,7 +94,7 @@ Var StartMenuGroup
 #
 # INSTALLER VALUES
 #
-OutFile voclipse-${VERSION}-${ARCHITECTURE}-Setup.exe
+OutFile voclipse-${VERSION}-${ARCHITECTURE}-setup.exe
 InstallDir $INSTDIR
 CRCCheck on
 XPStyle on
