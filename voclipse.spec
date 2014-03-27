@@ -54,6 +54,6 @@ rm -rf %{buildroot}
 /usr/bin/voclipse
 /opt/voclipse
 /usr/share/applications/voclipse.desktop
-/usr/share/icons/hicolor/*/apps/*.png
+/usr/share/icons/hicolor/*/apps/*
 
 %changelog
