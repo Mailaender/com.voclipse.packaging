@@ -12,7 +12,7 @@
 #
 
 Name: voclipse
-Version: 4.4M6
+Version: 4.4M7
 Release: 0
 Summary: The vogella development environment a.k.a. voclipse
 License: EPL-1.0

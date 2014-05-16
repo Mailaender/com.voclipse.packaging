@@ -14,7 +14,7 @@ SetCompressor lzma
 #
 Name voclipse
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION "4.4M6"
+!define VERSION "4.4M7"
 !define COMPANY "vogella GmbH"
 !define URL "http://www.voclipse.com"
 
